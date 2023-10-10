@@ -1,0 +1,20 @@
+[project]
+name = "config_example"
+version = "0.0.1"
+requires-python = "~=3.11"
+dependencies = [
+    "tomli>=2.0",
+    "pint>=0.22",
+]
+
+[project.scripts]
+config_example = "config_example:main"
+
+[tool.setuptools]
+py-modules = ["config_example", "config_python"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.package-data]
+config = ["*.toml"]

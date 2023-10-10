@@ -1,0 +1,46 @@
+# comments like in python
+global_stuff = "I'm not in any categories"  # comments on var lines possible
+
+[vars]
+string = "Text with quotes"
+long_string = """
+this spans
+multiple lines
+"""
+boolean = true
+integer = 42
+float = 3.11
+negative = -1
+large_numbers = 123_456_789
+negative_inf = -inf
+not_a_number = nan
+offset_date-time = 2021-01-12 01:23:45+01:00
+offset_date-time_utc = 2021-01-12 00:23:45Z
+local_date-time = 2021-01-12 01:23:45
+local_date = 2021-01-12
+local_time = 01:23:45
+local_time_with_us = 01:23:45.654321
+arrays = ["one", 2, {third = "three"}]
+
+[tables]
+
+nested_one_line.element_1 = "I'm nested"
+nested_one_line.element_2 = "I'm nested too"
+
+  [tables.nested_categories]
+  element_1 = "I'm nested in a different way"
+  element_2 = "I'm also nested in a different way"
+
+[[array_of_tables]]
+element_1 = 1
+element_2 = 2
+
+[[array_of_tables]]
+element_1 = 1  # same elements!
+element_2 = 2
+
+[[tables.nested_array_of_tables]]
+element_1 = 1
+
+[[tables.nested_array_of_tables]]
+element_1 = 1
